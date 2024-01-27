@@ -11,3 +11,26 @@ Create a JavaScript program that calculates the Body Mass Index (BMI) and assign
     - Otherwise, you are obese.
 
 */
+
+let weight=51;
+// console.log(weight);
+
+let height=1.76;
+let BMI = ((weight/(Math.pow(height,2))).toFixed(1)) ;
+// console.log(BMI);
+
+if(BMI<18.5){
+    console.log("You are underweight.");
+}
+
+else if(BMI>=18.5 && BMI<=24.9){
+    console.log("You are Norman.");
+}
+
+else if(BMI>=25 && BMI<=29.9){
+    console.log("You are overweight.");
+}
+
+else{
+    console.log("You are obese.");
+}
